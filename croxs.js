@@ -87,3 +87,10 @@ sidenavbar.addEventListener('click',function(){
     sidenavbaron.style.marginLeft="0px"
 })
 
+sidenavbar=document.getElementById("side-navbar-close")
+sidenavbaron=document.querySelector(".side-navbar")
+sidenavbar.addEventListener('click',function(){
+    sidenavbaron.style.marginLeft="-300px"
+    console.log("closed")
+})
+
