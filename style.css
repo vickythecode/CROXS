@@ -60,6 +60,7 @@ ul{
     position: absolute;
     top: 35%;
     right: 5%;
+    z-index: 1;
     
 }
 .rightbutton i{
@@ -367,6 +368,12 @@ input:focus {
 
 }
 
+@media screen and (max-width:440px) {
+    .limited-offer-text{
+        margin-left: 20px;
+    }
+}
+
 /* sidenavbar */
 .side-navbar{
     background-color: #1D232C;
@@ -376,7 +383,7 @@ input:focus {
     width: 50%;
     height: 100%;
     color: #E2E1E1;
-    margin-left: -60%;
+    margin-left: -65%;
     transition-duration: 1s;
     z-index: 10;
     padding: 20px;
@@ -385,8 +392,7 @@ input:focus {
 .side-navbar-links a{
     color: white;
     text-decoration: none;
-    
-    
+      
 }
 .side-navbar-links p{
     margin-bottom: 40px;
@@ -449,3 +455,6 @@ input:focus {
     margin: auto;
     visibility: hidden;
 }
+
+
+
