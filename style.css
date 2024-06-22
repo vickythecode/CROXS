@@ -20,25 +20,12 @@ body::-webkit-scrollbar {
 html{
     scroll-behavior: smooth;
 }
-/* nav{
-    background-color:white;
-    color:black;
-    padding: 15px;
-    word-spacing: 30px;
-    
-}
-ul,li,h1{
-    display: inline;
-}
-ul{
-    margin-left:60%;
-} */
+
 .swipe{
     overflow: hidden;
     display: flex;
     width: 100%;
     position: relative;
-    
     border-radius: 5px;
 }
 .slider{
@@ -77,6 +64,10 @@ ul{
 .slider-content h1{
     font-size: 5vw;
 }
+.slider-content h4{
+    font-size: 2vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .slider-content button{
     padding-left: 20px;
@@ -85,6 +76,8 @@ ul{
     padding-bottom: 10px;
     margin-top: 10px;
     color: #1D232C;
+    cursor: pointer;
+    font-size: 1rem;
  }
  .popup{
     background-color: #1D232C;
@@ -232,6 +225,7 @@ ul{
     color: #E2E1E1;
     padding: 20px;
     font-size: 2vw;
+    background-image: linear-gradient(to left, #1D232C , rgba(255, 0, 0, 0.41),grey)
 }
 
 .limited-offer img{
@@ -316,6 +310,7 @@ ul{
     width: 50%;
     justify-content:space-evenly;
     align-items: center;
+    font-size: 1.10rem;
 }
 
 .navbar-links a{
@@ -327,22 +322,6 @@ ul{
     text-decoration: underline;
     color: #1D232C;
 }
-
-/* .navbar-search {
-    border: solid #1D232C 1px;
-    border-radius: 10px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    width: 95%;
-} */
-
-/* .navbar-search input {
-    border: none;
-    width: 100%;
-    background-color: transparent;
-    
-} */
 
 input:focus {
     outline: none;
@@ -363,15 +342,22 @@ input:focus {
     .navbar-links {
         display: none;
     }
-
     
-
 }
 
 @media screen and (max-width:440px) {
     .limited-offer-text{
         margin-left: 20px;
     }
+    .slider-content button{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 5px;
+        color: #1D232C;
+        cursor: pointer;
+     }
 }
 
 /* sidenavbar */

@@ -34,15 +34,7 @@ popupclose.addEventListener("click",function(){
     popup.style.display="none"
 })
 
-//scrollbarbottom
-// var scrollbarbottom =document.querySelector(".initial-scroll-animate")
-// window.addEventListener("scroll",function(){
-//    var windowheight=window.innerHeight
-//    var boxtop=scrollbarbottom.getBoundingClientRect().top
-//    if(windowheight>boxtop){
-//     scrollbarbottom.style.opacity='1'
-//    }
-// })
+
 
 window.addEventListener("scroll",function(){
     var elements = this.document.querySelectorAll(".initial-scroll-animate")
@@ -54,7 +46,6 @@ window.addEventListener("scroll",function(){
     //  console.log(windowHeight)
     //  console.log(elbound.top)
      if(windowHeight>elbound.top-100){
-        // console.log("Hi")
     el.classList.remove("reveal-scroll-animate")
 
     }
@@ -73,10 +64,10 @@ likebuttons.forEach((btn)=>{
         if(e.target.src.indexOf("blackheart")>0)
         {
             console.log("AOT");
-            e.target.src="redheart.png"
+            e.target.src="images/icons/redheart.png"
         }
         else{
-            e.target.src="blackheart.png"
+            e.target.src="images/icons/blackheart.png"
         }
     })
 })
